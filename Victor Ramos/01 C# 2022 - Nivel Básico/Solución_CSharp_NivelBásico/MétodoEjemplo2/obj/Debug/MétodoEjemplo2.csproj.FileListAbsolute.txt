@@ -1,0 +1,8 @@
+D:\CURSOS\Victor Ramos\01 C# 2022 - Nivel Básico\Solución_CSharp_NivelBásico\MétodoEjemplo2\bin\Debug\MétodoEjemplo2.exe.config
+D:\CURSOS\Victor Ramos\01 C# 2022 - Nivel Básico\Solución_CSharp_NivelBásico\MétodoEjemplo2\bin\Debug\MétodoEjemplo2.exe
+D:\CURSOS\Victor Ramos\01 C# 2022 - Nivel Básico\Solución_CSharp_NivelBásico\MétodoEjemplo2\bin\Debug\MétodoEjemplo2.pdb
+D:\CURSOS\Victor Ramos\01 C# 2022 - Nivel Básico\Solución_CSharp_NivelBásico\MétodoEjemplo2\obj\Debug\MétodoEjemplo2.csproj.AssemblyReference.cache
+D:\CURSOS\Victor Ramos\01 C# 2022 - Nivel Básico\Solución_CSharp_NivelBásico\MétodoEjemplo2\obj\Debug\MétodoEjemplo2.csproj.SuggestedBindingRedirects.cache
+D:\CURSOS\Victor Ramos\01 C# 2022 - Nivel Básico\Solución_CSharp_NivelBásico\MétodoEjemplo2\obj\Debug\MétodoEjemplo2.csproj.CoreCompileInputs.cache
+D:\CURSOS\Victor Ramos\01 C# 2022 - Nivel Básico\Solución_CSharp_NivelBásico\MétodoEjemplo2\obj\Debug\MétodoEjemplo2.exe
+D:\CURSOS\Victor Ramos\01 C# 2022 - Nivel Básico\Solución_CSharp_NivelBásico\MétodoEjemplo2\obj\Debug\MétodoEjemplo2.pdb

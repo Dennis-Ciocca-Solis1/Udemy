@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Bootstrap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+    <!-- Cargando Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--  -->
+
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body>
+
+    <header class="header p-5 mb-5">
+        <h1 class="text-center">Bootstrap 5 - La Guía Completa inc. BEM y SASS +10 Proyectos</h1>
+        <p class="text-center text-white">Básicos de Bootstrap 5</p>
+    </header>
+
+    <!-- CONTENEDORES -------------------------------------------------------------------->
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Contenedores</h1>
+
+        <!-- Container: Centra el contenido dejando un margin por los lados -->
+        <div class="container">Contenido</div>
+
+        <!-- <div class="container-xs">Contenido</div>Extra Small: menor a 576px -->
+        <div class="container-sm">Contenido</div><!--Small      : mayor a 576px-->
+        <div class="container-md">Contenido</div><!--Medium     : mayor a 768px-->
+        <div class="container-lg">Contenido</div><!--Large      : mayor a 992px-->
+        <div class="container-xl">Contenido</div><!--Extra Large: mayor a 1200px-->
+        <div class="container-xxl">Contenido</div><!--Extra Extra Large: mayor a 1400px-->
+
+        <!-- Container-Fluid: Centra el contenido tomando todo el ancho de pantalla -->
+        <div class="container-fluid">Contenido</div>
+
+    </section>
+
+    <!-- GRID ---------------------------------------------------------------------------------------------------------->
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Grid</h1>
+
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-4"><!--tomará todo el ancho cuando la resolución sea menor a 'md'-->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quam, blanditiis quaerat, iusto
+                    accusamus quod harum eum voluptas aspernatur unde sunt ducimus sint fuga earum non reprehenderit?
+                    Totam, distinctio atque?
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <!--una segunda clase acomoda los elementos a ese valor cuando la pantalla sea más grande -->
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem,
+                    eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum
+                    placeat!
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem,
+                    eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum
+                    placeat!
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem,
+                    eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum
+                    placeat!
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem,
+                    eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum
+                    placeat!
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem,
+                    eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum
+                    placeat!
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem,
+                    eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum
+                    placeat!
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem,
+                    eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum
+                    placeat!
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--TIPOGRAFÍA -------------------------------------------->
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Tipografía</h1>
+
+        <!-- Headings ------>
+        <h1>Encabezado 1</h1>
+        <h2>Encabezado 2</h2>
+        <h3>Encabezado 3</h3>
+        <h4>Encabezado 4</h4>
+        <h5>Encabezado 5</h5>
+        <h6>Encabezado 6</h6>
+        <!--  -->
+        <p>Este es un párrafo</p>
+
+
+        <!-- Display: es una gigantografía de los Headings -->
+        <h1 class="display-1">Encabezado con Display</h1>
+        <h1 class="display-2">Encabezado con Display</h1>
+        <h1 class="display-3">Encabezado con Display</h1>
+        <h1 class="display-4">Encabezado con Display</h1>
+        <h1 class="display-5">Encabezado con Display</h1>
+        <h1 class="display-6">Encabezado con Display</h1>
+        <!--  -->
+        <p class="display-1">Párrafo con Display</p>
+
+
+        <!-- Font Size: otra alternativa a los headinng -->
+        <h1 class="fs-1">Encabezado con Font Size</h1>
+        <h1 class="fs-2">Encabezado con Font Size</h1>
+        <h1 class="fs-3">Encabezado con Font Size</h1>
+        <h1 class="fs-4">Encabezado con Font Size</h1>
+        <h1 class="fs-5">Encabezado con Font Size</h1>
+        <h1 class="fs-6">Encabezado con Font Size</h1>
+        <!--  -->
+        <p class="fs-1">Párrafo con Font Size</p>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Colores en Bootstrap</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Imágenes</h1>
+
+
+    </section>
+
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Botones</h1>
+
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Margins y Paddings</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Spinners</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Cards</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Formularios</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Toasts</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Carousel</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Modals</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Navs</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Off Canvas</h1>
+
+    </section>
+
+</html>

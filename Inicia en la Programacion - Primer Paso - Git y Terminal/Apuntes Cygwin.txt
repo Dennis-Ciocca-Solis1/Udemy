@@ -1,0 +1,64 @@
+#0. Cambiar de directorio
+	cd D:/Documentos
+
+#1. man : Abre la ayuda del manual del comando escrito a continuación
+	man ls
+*Nota: Presionar la letra 'q' para salir del manual
+
+---------------------------------------------------------------------------	
+#2. ls : Lista todo el contenido de un directorio (menos archivos ocultos)
+
+*Nota1: ls pictures/ listará lo que está dentro de esa carpeta hija
+*Nota2: ls pictures/*.png listará todos los archivos que sólo que terminen con esa extension
+
+---------------------------------------------------------------------------------------------
+#3. ls -a : Lista absolutamente todo el contenido de un directorio
+
+--------------------------------------------------------------------------------------------------
+#4. ls -l : Lista todo el contenido de un directorio (menos archivos ocultos) en un formato largo
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#5. ls -la : Lista absolutamente todo el contenido de un directorio en un formato largo
+
+--------------------------------------------------------------------------------------------------
+#6. ls -s : Lista todo el contenido de un directorio (menos archivos ocultos) en un formato corto
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#7. ls -sa : Lista absolutamente todo el contenido de un directorio en un formato corto
+
+----------------------------------------------------------------------------------------
+#8. PWD : muestra nuestro directorio actual
+
+------------------------------------------------------------------------------------------------------------------------
+#9. Cambiar de un directorio a otro directorio del mismo nivel
+	desde D:/Documentos a Descargas
+	cd ../Descargas
+*Nota1: Para cambiar de directorio a una carpeta con espacios en blanco se utiliza ''. Ejm: cd Documentos/'Nueva Carpeta'
+*Nota2: Para regresar a un nivel arriba escribir cd .. 
+*Nota3: Para regresar dos niveles arriba escribir cd ../.. 
+------------------------------------------------------------------------------------------------------------------------	
+#10. Cambiar de una carpeta a otra carpeta del mismo nivel de la carpeta padre
+	cd ../../'Nueva Carpeta 2'
+Nota: Cambiará desde D:/Documentos/Nueva Carpeta/Nueva1 a D:/Documentos/Nueva Carpeta 2/
+
+-----------------------------------------------------------------------------------------
+#11. Ir hasta el nivel más bajo de directorios nada más iniciando
+	cd /cygdrive/d/Descargas/Nueva1/*/*/*/'Nivel 5'
+	
+Nota1: Obligatoriamente hay que escribir hasta cd /cygdrive/d/Descargas/este nivel también/luego el asterisco/
+Nota2: El asterisco funciona hasta 3 asteriscos
+Nota3: Posiblemente funcionen hasta más asteriscos si no hay archivos hijos que tengan los mismo nombres
+//ejem: Nueva1/Nivel 2/Nivel 3/Nivel 4/Nivel 5
+		Nueva2/Nivel 2/Nivel 3/Nivel 4/Nivel 5
+
+---------------------------------------------------------------------------------------------------
+#12. Subir hasta el directorio Raíz desde cualquier nivel más bajo
+	cd /cygdrive/c/
+		o
+	cd /cygdrive/d/
+Nota: cd ~ te devuelve al mismo inicio como cuando abres
+
+#13. Subir hacia un nivel intermedio (escribir la dirección completa a la que se quiere subir)
+	cd /cygdrive/d/Documentos/Nueva1
+
+

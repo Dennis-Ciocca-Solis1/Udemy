@@ -1,0 +1,193 @@
+
+
+html{
+    
+}
+
+html {
+    box-sizing: border-box; /*no toma en cuenta el padding de los botones*/
+    font-size: 65.5%; /*Reseteo para REMs 62.5% = 10px de 16 px */
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit; /*funciona junto con el boxsizing del selector html*/
+  }
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.9;
+}
+
+/** GLOBALES **/
+img{
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 120rem; /*anchura máxima en pantalla*/
+    margin: 0 auto; /*margin centrado*/
+}
+
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 3.4rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 2.6rem;
+}
+
+/** UTILIDADES **/
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300{
+    font-weight: 300; /*cambia el grosor de las letras*/
+}
+
+.centrar-texto{
+    text-align: center;
+
+}
+
+.d-block{
+    display: block!important;
+}
+
+/** BOTONES **/
+.boton{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.boton-amarillo{
+    background-color: #e08709;
+}
+
+.boton-verde{
+    background-color: #71b100;
+}
+
+
+
+/****************************************************************************************/
+/** Header **/
+.site-header.inicio{
+    background-image: url(../img/header.jpg);
+    background-position: center center; /*posiciona la imagen vista desde el centro*/
+    background-size: cover; /*fuerza a la imagen a tomar todo el espacio disponible*/
+    height:100vh; /*muestra la imagen al 100% de tu pantalla*/
+    min-height: 60rem; /*altura mínima*/ 
+}
+
+.contenido-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.contenido-header h1{
+    color: white;
+    padding-bottom: 3rem;
+    max-width: 60rem;
+    line-height: 1.9; /*hacer un interlineado*/    
+}
+
+.barra{
+    display: flex; /*posiciona una caja inmediatamente después de la otra*/
+    justify-content: space-between; /*pone las cajas una a un lado y la otra al otro*/
+    padding-top: 3rem;
+    align-items: center;
+}
+
+/** Navegación **/
+.navegacion a {
+    color: white;
+    text-decoration: none; /*quitar el subrayado a los links*/
+    font-size: 1.8rem; /* 1.8 rem = 18px después del reseteo de REMs*/
+    margin-right: 2rem; /*dale separación a los enlaces*/
+    
+}
+
+.navegacion a:hover{
+    color: #71b100;
+}
+
+.navegacion a:last-of-type{ /*le quita el margen al último de la derecha*/
+    margin: 0;
+}
+/********************************************************************************************/
+/** Iconos Nosotros**/
+.encabezado-nosotros{
+    font-weight: 300; /*cambia el grosor de las letras*/
+    text-align: center;
+}
+
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono{
+    flex-basis:calc(33.3%-1rem); /*le da a la caja el 33% de la anchura del div*/
+    text-align: center;
+}
+
+.icono h3{
+    /*text-transform: capitalize; /*permire poner la primera letra de cada texto en mayúscula*/
+    text-transform: uppercase; /*transforma de minúsculas a mayúsculas*/
+
+}
+/***********************************************************************************************/
+/** Main **/
+
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.anuncio{
+    flex-basis: calc(33.3%-1rem);
+    border:solid #b5b5b5 1px;
+    margin: 0 0.5rem 0 0.5rem;
+    background-color: #f5f5f5;
+    
+}
+
+.contenido-anuncio{
+    padding: 2rem;
+}
+
+.contenido-anuncio h3,
+.contenido-anuncio p {
+    margin: 0;
+}
+
+.precio{
+    color: #71b100;
+    font-weight: 700;
+}
+
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
+

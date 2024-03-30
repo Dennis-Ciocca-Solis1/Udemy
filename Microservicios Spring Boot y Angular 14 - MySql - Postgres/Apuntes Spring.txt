@@ -1,0 +1,98 @@
+23. CREACIÓN DE MICROSERVICE
+
+//Ir a Start.spring.io
+
+//Seleccionar:
+	Project		: Maven
+	Labguage		: Java
+	Spring Boot	: 2.7.1
+
+//Escribir Metadata del proyecto
+	Group			: com.vaxi
+	Artifact		: spring-boot-microservice-1-inmueble (este es el nombre de la API)
+	Name			: spring-boot-microservice-1-inmueble
+	Description : Demo
+	Package Name: com.vaxi.spring-boot-microservice-1-inmueble
+	Packing		: Jar
+	Java			: 17
+
+//Agregar Dependencias:
+	Spring Web (facilita el desarrollo de aplicaciones web en Java)
+	Spring Security (proporciona autenticación y autorización en aplicaciones web y servicios REST)
+	Spring Data JPA (simplifica la interacción con bases de datos relacionales a través de JPA (Java Persistence API))
+	Rest Repositories (genera automáticamente un conjunto de servicios RESTful basados en repositorios JPA.)
+	PostgresSQL Driver (Proporciona las clases y métodos necesarios para realizar operaciones de base de datos, como consultas, inserciones, actualizaciones y eliminaciones.)
+	Eureka Discovery Client (permite que los servicios se registren y encuentren entre sí de forma dinámica.)
+	Lombok (ayuda a reducir la cantidad de código repetitivo como los getters y setters)
+	
+//Clic en Generat; descargar y descomprimir
+
+//Abrir proyecto con tu IDE favorito
+	
+//============================================================================================================================================================================
+//CONFIGURANDO EL IDE INTELLIJ para nuestro proyecto
+
+//Solucionar error Use Maven wrapper (si es que sale)
+	ir a File/Settings/Build/Build Tools/Maven/Maven Home path/seleccionar el que creamos en la variable de entorno y OK
+	
+//Habilitando el procesador de anotaciones
+	ir a File/Settings/Compiler/Annotation Processors/clic en Enable annotation processing y OK
+	
+//Limpiando memoria la cache
+	ir a File/Invalidate caches/clic en clear file system and Local History e Invalidate and Restart
+
+//============================================================================================================================================================================
+//CONFIGURANDO NUESTRO PROYECTO
+
+//Configurando nuestro Application Properties
+	ir a src/main/resources/application.properties
+	
+//Indicando nombre de la aplicación que estamos desarrollando
+	spring.application.name=inmueble-service
+	
+//Indicando el puerto en el que se ejecutará mi proyecto (mi aplicación)
+	server.port=3333
+	
+//Indicando el origen de la base de daos
+	spring.datasource.url=jdbc:postgresql://localhost:5432/db_inmueble?currentSchema=sc_inmueble&ssl=false
+
+//Brindando usuario y contraseña
+	spring.datasource.username=admin
+	spring.datasource.password=VaxiDrez2005$
+	
+//Indicando driver de conexión a postgres
+	spring.datasource.driver-class-name=org.postgresql.Driver
+	
+//Agregando dialecto a la Persistencia para poder mapear	las tablas
+	spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect;
+
+//Generando las tablas automáticamente
+	spring.jpa.hibernate.ddl-auto=update
+	
+//Mostrar los comandos utilizados en cada consulta desde Java
+	spring.jpa.show-sql=true
+
+//Comunicándose con otros microservicios
+	eureka.client.enabled=false
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

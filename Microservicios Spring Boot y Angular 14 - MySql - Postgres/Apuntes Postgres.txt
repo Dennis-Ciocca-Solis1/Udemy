@@ -1,0 +1,120 @@
+22. CREACIÓN SERVIDOR POSTGRES
+
+//Descargando imagen Postgres desde Dockerhub
+	docker pull postgres
+
+//Creando el docker container de Postgres
+   docker run --name postgres-vaxi -e POSTGRES_PASSWORD=VaxiDrez2005$ -p 5432:5432 -d postgres:latest
+
+//Usuario Postgres
+   postgres-vaxi
+
+//Contraseña Postgres
+   POSTGRES_PASSWORD=VaxiDrez2005$
+
+//Ingresando a la línea de comandos de postgres en docker (en Powershell)   
+	docker exec -it postgres-vaxi bash (postgres-vaxi es el nombre del container) --> root@
+
+//Entrando en la base de datos postgres de docker (en la terminal)
+   psql -U postgres (postgres es el nombre de root) --> psql --> postgres=#
+
+//Viendo los roles del usuario postgres actual (o sea postgres)
+   \du
+
+//Creando una base de datos en postgres
+   create database inmueble; --> CREATE DATABASE
+   
+//Listando todas las bases de datos existentes
+   \l
+
+//Entrando en la base de datos
+   \c inmueble
+
+//Listando tablas de la base de datos actual
+   \d
+
+//Saliendo de la tabla y base de datos
+   exit
+   exit
+
+//=======================================================================================================================
+	CREANDO NUEVO ROL
+
+//Creando el nuevo rol en una nueva base de datos (verificar que el contenedor postgres se esté ejecutando)
+	entrar al bash de linux: docker exec -it postgres-vaxi bash 	
+   psql -U postgres (postgres es el nombre de root) --> psql --> postgres=#	
+	
+	CREATE ROLE admin WITH
+	
+//Y asignándole atributos	
+	LOGIN
+	SUPERUSER
+	CREATEDB
+	CREATEROLE
+	INHERIT (que pueda hcer herencia de propiedades)
+	REPLICATION (permite hacer replicación de data)
+	CONNECTION LIMIT -1 (cuantas conexiones puede manejar simultáneamente)
+	PASSWORD 'VaxiDrez2005$'; --> CREATE ROLE
+	
+	\du
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++	
+//Creando una base de datos en el Role creado
+	CREATE DATABASE db_inmueble --> CREATE DATABASE
+	WITH
+	OWNER = admin
+	ENCODING = 'UTF8'
+	CONNECTION LIMIT = -1; --> CREATE DATABASE
+	
+//Borrar una base de datos
+	DROP DATABASE db_inmueble; --> DROP DATABASE
+
+//=========================================================================================================================
+	CREANDO UN ESQUEMA EN POSTGRES
+
+//Cambiar el contexto (primero salir de la base de datos 'postgres')
+	exit
+
+//Entrar en la nueva base de datos (db_inmueble)	
+//psql -d db_inmueble -U admin --> db_inmueble=#
+
+//Creando el esquema
+	CREATE SCHEMA sc_inmueble
+	AUTHORIZATION admin; --> CREATE SCHEMA
+	
+//Verificando que el 'schema' fue creado correctamente
+	\dn --> List of schemas
+	
+//
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

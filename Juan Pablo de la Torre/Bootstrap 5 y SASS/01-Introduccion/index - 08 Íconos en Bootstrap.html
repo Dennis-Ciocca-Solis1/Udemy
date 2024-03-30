@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Bootstrap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+    <!--Cargando los íconos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Cargando Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--  -->
+
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body>
+
+    <header class="header p-5 mb-5">
+        <h1 class="text-center">Bootstrap 5 - La Guía Completa inc. BEM y SASS +10 Proyectos</h1>
+        <p class="text-center text-white">Básicos de Bootstrap 5</p>
+    </header>
+
+    <!-- CONTENEDORES -------------------------------------------------------------------->
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Contenedores</h1>
+
+        <!-- Container: Centra el contenido dejando un margin por los lados -->
+        <div class="container">Contenido</div>
+
+        <!-- <div class="container-xs">Contenido</div>Extra Small: menor a 576px -->
+        <div class="container-sm">Contenido</div><!--Small      : mayor a 576px-->
+        <div class="container-md">Contenido</div><!--Medium     : mayor a 768px-->
+        <div class="container-lg">Contenido</div><!--Large      : mayor a 992px-->
+        <div class="container-xl">Contenido</div><!--Extra Large: mayor a 1200px-->
+        <div class="container-xxl">Contenido</div><!--Extra Extra Large: mayor a 1400px-->
+
+        <!-- Container-Fluid: Centra el contenido tomando todo el ancho de pantalla -->
+        <div class="container-fluid">Contenido</div>
+
+    </section>
+
+
+    <!-- GRID --------------------------------------->
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Grid</h1>
+
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-4"><!--tomará todo el ancho cuando la resolución sea menor a 'md'-->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quam, blanditiis quaerat, iusto
+                    accusamus quod harum eum voluptas aspernatur unde sunt ducimus sint fuga earum non reprehenderit?
+                    Totam, distinctio atque?
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <!--una segunda clase acomoda los elementos a ese valor cuando la pantalla sea más grande -->
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem,
+                    eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum
+                    placeat!
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem,
+                    eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum
+                    placeat!
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem,
+                    eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum
+                    placeat!
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem,
+                    eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum
+                    placeat!
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem,
+                    eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum
+                    placeat!
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem,
+                    eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum
+                    placeat!
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem,
+                    eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum
+                    placeat!
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--TIPOGRAFÍA ----------------------------------------->
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Tipografía</h1>
+
+        <!-- Headings ------>
+        <h1>Encabezado 1</h1>
+        <h2>Encabezado 2</h2>
+        <h3>Encabezado 3</h3>
+        <h4>Encabezado 4</h4>
+        <h5>Encabezado 5</h5>
+        <h6>Encabezado 6</h6>
+        <!--  -->
+        <p>Este es un párrafo</p>
+
+
+        <!-- Display: es una gigantografía de los Headings -->
+        <h1 class="display-1">Encabezado con Display</h1>
+        <h1 class="display-2">Encabezado con Display</h1>
+        <h1 class="display-3">Encabezado con Display</h1>
+        <h1 class="display-4">Encabezado con Display</h1>
+        <h1 class="display-5">Encabezado con Display</h1>
+        <h1 class="display-6">Encabezado con Display</h1>
+        <!--  -->
+        <p class="display-1">Párrafo con Display</p>
+
+
+        <!-- Font Size: otra alternativa a los headinng -->
+        <h1 class="fs-1">Encabezado con Font Size</h1>
+        <h1 class="fs-2">Encabezado con Font Size</h1>
+        <h1 class="fs-3">Encabezado con Font Size</h1>
+        <h1 class="fs-4">Encabezado con Font Size</h1>
+        <h1 class="fs-5">Encabezado con Font Size</h1>
+        <h1 class="fs-6">Encabezado con Font Size</h1>
+        <!--  -->
+        <p class="fs-1">Párrafo con Font Size</p>
+
+
+        <!-- UTILIDADES PARA TIPOGRAFÍAS ------------------------------------------------------------------------>
+
+        <!-- Utilidades para alinear Texto -->
+        <p class="text-start">Texto a la izquierda</p>
+        <p class="text-end">Texto a la derecha</p>
+        <p class="text-center">Texto al centro</p>
+        <!-- Con Media queries +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <p class="text-end text-md-center text-lg-start text-xl-end">Texto a la derecha, centro e izquierda...</p>
+
+
+        <!-- Capitalización -->
+        <p class="text-lowercase">MINUSCULAS</p>
+        <p class="text-uppercase">mayusculas</p>
+        <p class="text-capitalize">Encabezado con tipo capital</p>
+
+
+        <!-- Controlar font-weight -->
+        <p class="fw-bold">Texto</p><!--valor de 700-->
+        <p class="fw-normal">Texto</p><!--valor de 400-->
+        <p class="fw-light">Texto</p><!--valor de 300-->
+
+    </section>
+
+
+    <!-- COLORES ----------------------------------------------------->
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Colores en Bootstrap</h1>
+
+        <h1 class="text-primary">Colores en Textos</h1><!--azul-->
+        <h1 class="text-secondary">Colores en Textos</h1><!--gris-->
+        <h1 class="text-danger">Colores en Textos</h1><!--rojo-->
+        <h1 class="text-warning">Colores en Textos</h1><!--naranja-->
+        <h1 class="text-success">Colores en Textos</h1><!--verde-->
+        <h1 class="text-info">Colores en Textos</h1><!--celeste-->
+        <h1 class="text-white">Colores en Textos</h1><!--blanco-->
+        <h1 class="text-light">Colores en Textos</h1><!--gris claro-->
+        <h1 class="text-dark">Colores en Textos</h1><!--negro-->
+
+        <div class="bg-danger text-white text-center">Un div con contenido</div>
+
+    </section>
+
+
+    <!-- IMÁGENES ---------------------------------------------------------------------->
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Imágenes</h1>
+
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-6"> <!-- img-fluid hace que las imágenes se adapten a un contenedor-->
+                    <!-- <img class="img-fluid" src="img/curso_1.jpg" alt="imagen curso"> -->
+                    <img class="img-thumbnail" src="img/curso_1.jpg" alt="imagen curso">
+                </div> <!--thumbnail le da un efecto de bordeado a las imágenes-->
+            </div>
+        </div>
+
+    </section>
+
+    <!-- BOTONES ------------------------------------------------------------------------------------------------->
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Botones</h1>
+
+        <!-- btn le quita el formato al botón  -->
+        <button type="button" class="btn btn-primary">Agregar</button>
+        <!-- btn-primary le da un color al botón -->
+
+        <button type="button" class="btn btn-primary">Agregar </button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+        <button type="button" class="btn btn-warning">Comprobar</button>
+        <button type="button" class="btn btn-dark">Comprobar</button>
+
+        <a href="#" class="btn btn-primary">Enlace</a>
+
+        <input type="submit" class="btn btn-primary" value="Enviar Formulario">
+
+        <!-- Outline Buttons-->
+        <a href="#" class="btn btn-outline-primary">Enlace </a>
+
+        <a href="#" class="btn btn-outline-danger">Enlace</a>
+
+        <a href="#" class="btn btn-outline-warning ">Enlace</a>
+
+        <!--Botones de Otro Tamaño: btn-lg, btn-sm --> <!-- disabled deshabilita un botón -->
+        <button type="button" class="btn btn-primary btn-lg disabled">Agregar</button>
+        <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+        <button type="button" class="btn btn-warning">Comprobar</button>
+        <button type="button" class="btn btn-dark" disabled>Comprobar</button>
+        <!-- disabled también funciona cómo atributo -->
+
+        <!-- ICÓNOS EN LOS BOTONES ----------------------------------------------------------->
+        <br> <!-- **Nota: el ícono se puede posicionar antes y/o después-->
+        <button type="button" class="btn btn-success"><i class="bi bi-person-plus-fill"></i>
+            Agregar</button>
+
+        <button type="submit" class="btn btn-primary">Enviar Formulario <i class="bi bi-alarm-fill"></i>
+        </button>
+
+        <a href="#" class="btn btn-outline-primary">Enlace <i class="bi bi-alarm-fill"></i>
+        </a>
+
+        <button type="button" class="btn btn-danger"><i class="bi bi-trash3"></i> Eliminar</button>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Margins y Paddings</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Spinners</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Cards</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Formularios</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Toasts</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Carousel</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Modals</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Navs</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Off Canvas</h1>
+
+    </section>
+
+</html>

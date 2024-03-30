@@ -1,0 +1,8 @@
+D:\CURSOS\Victor Ramos\01 C# 2022 - Nivel Básico\Solución_CSharp_NivelBásico\Excepciones\bin\Debug\Excepciones.exe.config
+D:\CURSOS\Victor Ramos\01 C# 2022 - Nivel Básico\Solución_CSharp_NivelBásico\Excepciones\bin\Debug\Excepciones.exe
+D:\CURSOS\Victor Ramos\01 C# 2022 - Nivel Básico\Solución_CSharp_NivelBásico\Excepciones\bin\Debug\Excepciones.pdb
+D:\CURSOS\Victor Ramos\01 C# 2022 - Nivel Básico\Solución_CSharp_NivelBásico\Excepciones\obj\Debug\Excepciones.csproj.AssemblyReference.cache
+D:\CURSOS\Victor Ramos\01 C# 2022 - Nivel Básico\Solución_CSharp_NivelBásico\Excepciones\obj\Debug\Excepciones.csproj.SuggestedBindingRedirects.cache
+D:\CURSOS\Victor Ramos\01 C# 2022 - Nivel Básico\Solución_CSharp_NivelBásico\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
+D:\CURSOS\Victor Ramos\01 C# 2022 - Nivel Básico\Solución_CSharp_NivelBásico\Excepciones\obj\Debug\Excepciones.exe
+D:\CURSOS\Victor Ramos\01 C# 2022 - Nivel Básico\Solución_CSharp_NivelBásico\Excepciones\obj\Debug\Excepciones.pdb

@@ -1,0 +1,42 @@
+D:\CURSOS\C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.csproj.AssemblyReference.cache
+D:\CURSOS\C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.csproj.SuggestedBindingRedirects.cache
+D:\CURSOS\C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.Properties.Resources.resources
+D:\CURSOS\C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.csproj.GenerateResource.cache
+D:\CURSOS\C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.csproj.CoreCompileInputs.cache
+D:\CURSOS\C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\bin\Debug\Presentración.exe.config
+D:\CURSOS\C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\bin\Debug\Presentración.exe
+D:\CURSOS\C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\bin\Debug\Presentración.pdb
+D:\CURSOS\C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.exe
+D:\CURSOS\C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.pdb
+D:\CURSOS\C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.MiPrimerFormulario.resources
+D:\CURSOS\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\bin\Debug\Presentración.exe.config
+D:\CURSOS\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\bin\Debug\Presentración.exe
+D:\CURSOS\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\bin\Debug\Presentración.pdb
+D:\CURSOS\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.csproj.AssemblyReference.cache
+D:\CURSOS\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.csproj.SuggestedBindingRedirects.cache
+D:\CURSOS\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.MiPrimerFormulario.resources
+D:\CURSOS\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.Properties.Resources.resources
+D:\CURSOS\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.csproj.GenerateResource.cache
+D:\CURSOS\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.csproj.CoreCompileInputs.cache
+D:\CURSOS\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.exe
+D:\CURSOS\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.pdb
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\bin\Debug\Presentración.exe.config
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\bin\Debug\Presentración.exe
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\bin\Debug\Presentración.pdb
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.csproj.AssemblyReference.cache
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.csproj.SuggestedBindingRedirects.cache
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.MiPrimerFormulario.resources
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.Properties.Resources.resources
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.csproj.GenerateResource.cache
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.csproj.CoreCompileInputs.cache
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.exe
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.pdb
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.frm_encuesta.resources
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.frm_trabajandoCombobox.resources
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.frm_numericupdown.resources
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.frm_tiempo.resources
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.frm_progressbar.resources
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.frm_trackbar.resources
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.frm_datagridview.resources
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.frm_principal.resources
+D:\CURSOS\Udemy\Victor Ramos\02 C# 2022 - Nivel Intermedio\Sol_Aprendizaje\Presentración\obj\Debug\Presentración.mdi_principal.resources

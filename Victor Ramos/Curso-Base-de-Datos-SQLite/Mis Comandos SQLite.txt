@@ -1,0 +1,461 @@
+/** CREAR UNA BASE DE DATOS Y UNA TABLA **/
+
+1. Crear una base de Datos: Clic en Nueva base de datos
+*Nota: Crear una carpeta donde se guadarán las bases de datos (de preferencia a las misma altura que sqlite-tools-win32)
+
+2. Crear una tabla: Clic en Estructura, escribir:
+create table categoria_ca (codigo_ca INTEGER, descripcion_ca TEXT);
+							
+//Otra forma:
+//Clic en NEstructura/Crear tabla/nombrarla y luego clic en Añadir
+
+//************************************************************************************************************************
+/** INSERTAR REGISTROS **/
+
+/* INSERT INTO TABLE (column1, column2, ...) 
+VALUES (value1,values2, ...)*/
+
+3. INSERT INTO tb_medidas(descripcion_me) values('UNIDADES')
+
+4. Consultando una tabla: SELECT * FROM tb_medidas
+
+//************************************************************************************************************************
+/** ACTUALIZAR REGISTROS **/
+
+/* UPDATE table
+SET column_1 = new_value_1,
+	column_2 = new_value_2
+WHERE
+	search_condition; */
+
+5.*UPDATE tb_categorias 
+set descripcion_ca = 'FIESTAS' 
+WHERE codigo_ca = 3;
+
+6. Agregar un símbolo de manera masiva a todos los registros
+UPDATE tb_categorias 
+set descripcion_ca = descripcion_ca || ' *'; 
+
+//************************************************************************************************************************
+/** ELIMINAR REGISTROS **/
+
+/*DELETE FROM table
+WHERE search_condition; */
+
+7. DELETE FROM tb_categorias 
+WHERE codigo_ca = 3;
+
+//************************************************************************************************************************
+/** CONSULTAR REGISTROS **/
+
+/* SELECT * FROM name_table; */
+
+8. SELECT * FROM tb_medidas;
+
+9. Seleccionar sólo algunas columnas: SELECT descripcion_me, codigo_me FROM tb_medidas;
+
+10. Seleccionar sólo algunas columnas con alias: SELECT descripcion_me as MEDIDA, codigo_me as CÓDIGO FROM tb_medidas;
+
+//************************************************************************************************************************
+/** OPERADORES ARITMÉTICOS **/
+
+//SUMA
+SELECT 10 + 2;
+
+//RESTA
+SELECT 10 - 2; 
+
+//MULTIPLICACIÓN
+SELECT 10 * 2; 
+
+//DIVISIÓN
+SELECT 10 / 2; 
+
+//MÓDULO
+SELECT 11 % 2;
+
+//************************************************************************************************************************
+/** OPERADORES DE COMPARACIÓN **/
+
+//IGUAL 
+*SELECT 4=4;
+
+//MENOR
+*SELECT 4<5;
+
+//MAYOR 
+*SELECT 4>3;
+
+//MENOR IGUAL
+*SELECT 4<=4; 
+
+//MAYOR IGUAL
+*SELECT 5>=3;
+
+//NO IGUAL O DIFERENTE
+SELECT 5 != 3;
+	  O
+SELECT 5<>3;
+
+//************************************************************************************************************************
+/** OPERADORES DE LÓGICOS 'AND,OR,NOT' **/
+
+//AND
+*SELECT 4=4 AND 5=5; --> true
+
+//OR
+*SELECT 4=3 OR 5=5; --> true
+
+//NOT
+SELECT NOT 4=4; --> false
+SELECT NOT 4>4; --> true
+
+//************************************************************************************************************************
+/** FUNCIONES STRING **/
+
+11. Escribir mensaje en consola
+SELECT 'Hola Mundo SQLite'
+
+12. Concatenar 2 textos.
+SELECT 'Hola Mundo SQLite' || ' Instructor Víctor Ramos';
+
+13. RTRIM: Quitando los espacios en blanco del borde derecho a un texto.
+SELECT rtrim('Hola Mundo SQLite            ') || ' Instructor Víctor Ramos';
+
+14. LTRIM: Quitando los espacios en blanco del borde izquierdo a un texto.
+SELECT 'Hola Mundo SQLite ' || ltrim('                  Instructor Víctor Ramos');
+
+15. TRIM: Quitando los espacios en blanco de los bordes a un texto
+SELECT 'Hola Mundo SQLite' || trim('          Instructor Víctor Ramos           ') || ' Bienvenidos';
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+16. UPPER: Convertir todo el texto a mayúsculas
+SELECT upper('Hola Mundo, Bienvenidos al Curso de Base de Datos SQLite');
+
+17. LOWER: Convertir todo el texto a minúsculas
+SELECT lower('Hola Mundo, Bienvenidos al Curso de Base de Datos SQLite');
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+18. LENGTH: Retonar la cantidad de caracteres de una expresión de texto
+SELECT length('Hola Mundo, Bienvenidos al Curso de Base de Datos SQLite');
+
+19. SUBSTR: Obteniendo una cantidad de caracteres dentro de una expresión de texto
+//SELECT substr('Hola Mundo',Posición inicial,Cantidad de caracteres a extraer);
+SELECT substr('Hola Mundo',2,3); --> ola
+
+//**************************************************************************************************************************
+/** FUNCIONES NUMÉRICAS **/
+
+20. COUNT: Contar la cantidad de registros totales de un campo.
+SELECT count(codigo_me) as Total FROM tb_medidas; --> 6
+
+21. MAX: Obtener el registro con el valor más alto de un campo.
+SELECT max(codigo_me) as MAX FROM tb_medidas;
+
+
+22. MIN: Obtener el registro con el valor más bajo de un campo.
+SELECT min(codigo_me) as MIN FROM tb_medidas;
+
+
+23. AVG: Obtener el promedio de los valores de los registros de un campo.
+SELECT avg(codigo_me) as AVG FROM tb_medidas;
+
+24. SUM: Sumar todos los valores de los registros de un campo.
+SELECT sum(codigo_me) as Suma_Total FROM tb_medidas;
+
+//**************************************************************************************************************************
+/** FUNCIONES DE FECHA Y HORA **/
+// date, time, datetime, strftime
+
+25. Obtener la fecha actual del servidor
+SELECT date();
+
+26. Obtener la hora actual del servidor
+SELECT time();
+
+27. Obtener la hora y fecha actual del servidor
+SELECT datetime();
+
+//++++++++++++++++++++++++++++++++++++++++++++++
+FECHA:
+28. Obtener el día de la fecha actual
+SELECT strftime('%d',date());
+
+29. Obtener el mes de la fecha actual
+SELECT strftime('%m',date());
+
+30. Obtener el año de la fecha actual
+SELECT strftime('%Y',date());
+
+HORA:
+31. Obtener la hora de la fecha actual
+SELECT strftime('%H',time());
+
+HORA:
+32. Obtener los minutos de la fecha actual
+SELECT strftime('%M',time());
+
+33. Obtener los segundos de la fecha actual
+SELECT strftime('%S',time());
+
+//++++++++++++++++++++++++++++++++++++++++++++++
+34. Obtener el día de la semana de la fecha actual
+SELECT strftime('%W',date());
+
+35. Obtener el número de semana del año actual
+SELECT strftime('%w',date());
+
+//**************************************************************************************************************************
+/** VISTAS **/
+
+36. Crear una Vista
+CREATE VIEW Vista_ejemplo1
+as
+SELECT descripcion_ca as CATEGORíA,
+		 codigo_ca as CÓDIGO
+FROM tb_categorias;
+
+//llamando a la vista
+SELECT * FROM Vista_ejemplo1;
+
+37. Llamando a la vista con filtro where
+SELECT * FROM Vista_ejemplo2 where MEDIDA='UNIDADES';
+
+//**************************************************************************************************************************
+/** WHERE **/
+
+/*SELECT column1, column2, columnN
+FROM table_name
+where [condition];*/
+
+38. Seleccionar todos los artículos que sean LG
+select * from tb_articulos where marca_ar ='LG';
+
+39. Seleccionar todos los artículos que no sean LG
+select * from tb_articulos where marca_ar !='LG';
+
+40. Seleccionar SÓLO los artículos que sean LG y/o LENOVO
+select * from tb_articulos where marca_ar in ('LG','LEVONO)';
+
+41. Seleccionar todos los artículos que su marca comience con la letra 'L'
+SELECT * FROM tb_articulos WHERE marca_ar like 'L%';
+
+42. Seleccionar todos los artículos que su marca comience con la letra 'LE'
+SELECT * FROM tb_articulos WHERE marca_ar like 'LE%';
+
+43. Seleccionar todos los artículos que su marca termine con la letra 'G'
+SELECT * FROM tb_articulos WHERE marca_ar like '%G';
+
+44. Seleccionar todos los artículos que su marca contenga la letras 'EN'
+SELECT * FROM tb_articulos WHERE marca_ar like '%EN%'; 
+
+45. Seleccionar todos los artículos que contenga  en su marca la letra 'N' en la 3ra posición
+
+//**************************************************************************************************************************
+46. Seleccionar todos los artículos que su código sea mayor a 3
+SELECT * FROM tb_articulos WHERE codigo_ar > 3;
+
+47. Seleccionar todos los artículos que su código sea menor igual a 3
+SELECT * FROM tb_articulos WHERE codigo_ar <= 3;
+
+48. Seleccionar todos los artículos que su código no sea 3
+SELECT * FROM tb_articulos WHERE codigo_ar != 3;
+
+//Otra forma
+SELECT * FROM tb_articulos WHERE NOT (codigo_ar = 3);
+
+49. Seleccionar todos los artículos que su código sea 1 y/o 3 y/o 5
+SELECT * FROM tb_articulos WHERE codigo_ar in (1,3,5);
+
+50. Seleccionar todos los artículos que su código no sea 1 y/o 3 y/o 5
+SELECT * FROM tb_articulos WHERE codigo_ar not in (1,3,5);
+
+//**************************************************************************************************************************
+/** SELECT CON OPERADORES LÓGICOS (AND,OR,NOT) **/
+
+51. Seleccionar todos los artículos cuyo código sea mayor a 2 y su marca sea 'LG'
+SELECT * FROM tb_articulos WHERE codigo_ar>2 AND marca_ar='LG';
+
+52. Seleccionar todos los artículos cuyo código sea mayor a 2 o su marca sea 'Lenovo'
+SELECT * FROM tb_articulos WHERE codigo_ar>2 OR marca_ar='LG';
+
+53. Seleccionar todos los artículos cuyo rango esté entre 1 y 3
+SELECT * FROM tb_articulos WHERE codigo_ar BETWEEN 1 AND 3;
+
+54. Seleccionar todos los artículos cuyo rango esté entre 1 y 3 y también el 5,6
+SELECT * FROM tb_articulos WHERE codigo_ar BETWEEN 1 AND 3
+UNION ALL
+SELECT * FROM tb_articulos WHERE codigo_ar IN(5,6)
+
+55. Seleccionar todos los artículos que tenga como descripcion 'tv'
+SELECT * FROM tb_articulos WHERE lower(descripcion_ar) = 'tv';
+
+//********************************************************************************************************************************
+/** ORDER BY **/
+
+SELECT
+	select_list
+FROM
+	table
+ORDER BY
+	column_1 ASC,
+	column_2 DESC;
+
+56. Seleccionar todos los artículos de manera 'descendente'
+SELECT * FROM tb_articulos ORDER BY codigo_ar DESC;
+
+57. Seleccionar todos los artículos de manera 'ascendente' ordenado por la columna 2
+SELECT * FROM tb_articulos ORDER BY 2 ASC;
+
+58. Seleccionar todos los artículos de manera 'ascendente' ordenado por la descripcion, pero con la marca de manera descendente
+
+//************************************************************************************************************************************************
+/** INNER JOIN **/
+
+SELECT a1, a2, b1, b2
+FROM A
+INNER JOIN B on B.f = A.f;
+
+59. Seleccionar todos los artículos de la tabla tb_articulos y tb_medidas
+SELECT * FROM tb_articulos a INNER JOIN tb_medidas b on a.codigo_me=b.codigo_me;
+
+60. Seleccionar sólo algunos campos de tabla tb_articulos y tb_medidas
+SELECT a.codigo_ar, a.descripcion_ar, a.marca_ar, b.descripcion_me		 
+FROM tb_articulos a INNER JOIN tb_medidas b on a.codigo_me=b.codigo_me;
+
+61. Seleccionar todos los campos de 3 tablas
+SELECT * 
+FROM tb_articulos     	 a
+INNER JOIN tb_medidas 	 b on a.codigo_me = b.codigo_me
+INNER JOIN tb_categorias c on a.codigo_ca = c.codigo_ca;
+
+62. Seleccionar algunos campos específicos de 3 tablas
+SELECT a.codigo_ar, a.descripcion_ar, a.marca_ar, b.descripcion_me, c.descripcion_ca 
+FROM tb_articulos     	 a
+INNER JOIN tb_medidas 	 b on a.codigo_me = b.codigo_me
+INNER JOIN tb_categorias c on a.codigo_ca = c.codigo_ca;
+
+//************************************************************************************************************************************************
+/** LEFT JOIN **/
+
+63. Muestra todos los artículos de la tabla tb_articulos más la información de la tabla tb_categorias que tenga relación
+SELECT * FROM tb_articulos a
+LEFT JOIN tb_categorias b on a.codigo_ca = b.codigo_ca;
+
+//al revés, ordena y segrega por los códigos de categoría y muestra aún los códigos de tb_categorias que no tienen relación con tb_articulos
+SELECT * FROM tb_categorias a
+LEFT JOIN tb_articulos b on a.codigo_ca = b.codigo_ca;
+
+//************************************************************************************************************************************************
+/** RIGHT JOIN **/
+//Right Join no está soportado en SQLite, pero para lograr un efecto parecido sólo poner al revés el orden del Left Join
+
+//************************************************************************************************************************************************
+/** UNION **/
+query_1
+UNION [ALL]
+query_2
+UNION [ALL]
+query_3
+...;
+
+64. Seleccionar todos los registros de las tablas tb_categorias y tb_medidas (los ordena por el código de ambas)
+SELECT * FROM tb_categorias
+UNION
+SELECT * FROM tb_medidas;
+
+65. Seleccionar todos los registros de las tablas tb_categorias y tb_medidas (los ordena por el código de cada una)
+SELECT * FROM tb_categorias
+UNION ALL
+SELECT * FROM tb_medidas;
+
+//************************************************************************************************************************************************
+/** GROUP BY **/
+
+SELECT
+	albumid,
+	count(trackid)
+FROM
+	tracks
+GROUP BY
+albumid;
+
+66. Mostrar la cantidad de artículos disponibles por marca
+SELECT marca_ar, count(descripcion_ar) as Total_art FROM tb_articulos
+GROUP BY marca_ar;
+
+67. Mostrar cuantos artículos existen por categoría
+---------------------------------------------------
+*Nota: Esto muestra todos los articulos y las categorías
+SELECT b.descripcion_ca, descripcion_ar 
+FROM tb_articulos a
+INNER JOIN tb_categorias b on a.codigo_ca = b.codigo_ca;
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SELECT b.descripcion_ca, count(descripcion_ar) as Total_art
+FROM tb_articulos a
+INNER JOIN tb_categorias b on a.codigo_ca = b.codigo_ca
+GROUP BY b.descripcion_ca;
+
+//************************************************************************************************************************************************
+/** FUNCIÓN IIF **/
+
+iff(expression, true_expression, false_expression);
+
+68. SELECT iif (3=4,'Número iguales','Números diferentes'); --> Números diferentes
+
+69. Cambiar marca de LG a 'LG 2022' donde el código sea mayor-igual a 3
+SELECT codigo_ar, descripcion_ar, iif(marca_ar='LG','LG *2022', marca_ar) as Marca
+from tb_articulos 
+where codigo_ar >=3;
+
+//************************************************************************************************************************************************
+/** CASE WHEN THEN END **/
+
+SELECT CASE
+	WHEN expression
+		THEN
+	ELSE
+		false_expression
+END
+
+70. Seleccionar caso 2
+SELECT (CASE 2
+			WHEN 1 THEN 'Es el número 1'
+			WHEN 2 THEN 'Es el número 2'
+			WHEN 3 THEN 'Es el número 3'
+			ELSE 'Número desconocido'
+		END); --> Es el número 2
+
+71. Agregar un símbolo especial por marca
+SELECT codigo_ar,
+		descripcion_ar,
+		(CASE marca_ar
+			WHEN 'LG' THEN 'LG *'
+			WHEN 'Lenovo' THEN 'LENOVO #'
+			ELSE marca_ar || ' X '
+		END) as marca_ar
+FROM tb_articulos;
+
+//************************************************************************************************************************************************
+/** TRIGGERS O DISPARADORES **/
+
+CREATE TRIGGER trigger_name [ANTES | DESPUÉS] event_name
+EN nombre_tabla
+COMIENZO
+- La lójica de disparo va aquí ...
+FIN;
+
+72. 
+
+
+
+
+
+
+
+
+
+
+
+

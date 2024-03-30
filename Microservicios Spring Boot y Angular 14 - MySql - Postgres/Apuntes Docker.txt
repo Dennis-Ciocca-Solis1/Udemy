@@ -1,0 +1,102 @@
+2. DOCKER CONTAINERS
+
+//Habilitando el WSL 2 en Windows (en la terminal)
+   wsl --install
+   Reiniciar PC
+   
+//Crear username y password
+
+//Ingresar username y password
+
+//Instalar Docker Desktop desde su páginal oficial
+
+//Verificando que docker está funcionando correctamente
+   docker (escribir en la terminal)
+   debe salir todos los comandos de docker
+
+//Verificando la versión de Docker
+   docker --version
+   
+//Vertificando las características que tiene el Docker Engine
+   docker version
+
+//Ver los directorios al interior de un container que soporte el comando "ls"
+   docker run (nombre container) ls
+ejm: docker run busybox ls
+
+//Detener un container
+	docker stop (nombre container) o (Id container)
+
+//Ver el historial de containers que hemos ejecutado
+	docker ps --all
+	
+//Eliminar todos los contenedores e imágenes que se encuentran detenidos o no estén siendo utilizados
+	docker system prune
+	
+//Detener un contenedor (esto permite que termine algún proceso en ejecución)
+	docker stop (nombre container)
+
+//Detener un contenedor a la fuerza (este lo finaliza inmediatamente)
+	docker kill (nombre container)
+
+//--------------------------------------------------------------------------------------------------------
+	LABORATORIO REDIS Y ACCESO A SHELL(BASH)
+//Descargar imagen redis
+	docker pull redis
+
+//Creando container de Redis
+	docker run -d -p 6379:6379 --name redis_container redis
+
+//Ingresando al shell de uncontainer (en Powershell)
+	docker exec -it <container_name> <comando> (nota: -it conecta el bash de mi sistema operativo con el de Linux)
+ejm: docker exec -it redis_container sh (sh quiere decir shell)
+
+//Ingresando al servicio de Redis
+	redis-cli --> 127.0.0.1:6379
+
+//Verfificando que ingresó correctamente
+	ping --> pong
+
+//Almcenando data en Redis
+	set nombre Luis --> OK
+
+//Consultando la data
+	get nombre --> "Luis"
+	
+//Saliendo del servicio de redis y de su base de datos
+	exit
+	exit
+	
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Descargando una imagen e ingresando al shell del container al mismo tiempo
+ejm: docker run -it busybox sh
+
+//Listar los elementos del container busybox
+	ls
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

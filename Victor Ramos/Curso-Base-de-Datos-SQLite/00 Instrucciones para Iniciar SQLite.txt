@@ -1,0 +1,21 @@
+0. Descargar desde su página oficial sqlite-tools-win32-x86-3400100.zip (1.90 MiB) y descomprimir en una carpeta
+
+1. Copiar ruta de la carpeta D:\CURSOS\Udemy\Victor Ramos\Base de Datos SQLite\sqlite-tools-win32-x86-3400100
+
+2. Agregar la ruta al Path
+// Escribir en inicio Editar las Variables de Entorno de Sistema
+
+3. Clic en Variables de entorno
+
+4. Clic en Path y luego editar
+
+5. Clic en nuevo
+
+6. Pegar la ruta copiada y aceptar
+
+7. Abrir CMD y escribir sqlite3 para verificar versión
+
+8. Instalando un IDE de SQLite: 
+// Descargar DB Browser for SQLite
+
+9. Abrir DB Browser
